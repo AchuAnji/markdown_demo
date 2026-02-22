@@ -46,7 +46,7 @@ python test_ac_verification.py
 ### 4. Run the Streamlit App
 ```bash
 export DATABASE_URL="postgresql://localhost/markdown_demo_test"
-streamlit run db/UI/app.py
+streamlit run UI/app.py
 ```
 
 ## Expected Output

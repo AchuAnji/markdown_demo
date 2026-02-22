@@ -188,7 +188,7 @@ def test_ac4():
     print("\nVerifying app.py structure...")
     
     try:
-        with open('/Users/anjineyulu/Documents/markdown_demo/db/UI/app.py', 'r') as f:
+        with open('/Users/anjineyulu/Documents/markdown_demo/UI/app.py', 'r') as f:
             app_content = f.read()
         
         checks = {
@@ -224,7 +224,7 @@ def test_ac5():
     print("\nVerifying app.py error handling...")
     
     try:
-        with open('/Users/anjineyulu/Documents/markdown_demo/db/UI/app.py', 'r') as f:
+        with open('/Users/anjineyulu/Documents/markdown_demo/UI/app.py', 'r') as f:
             app_content = f.read()
         
         checks = {

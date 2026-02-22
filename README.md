@@ -91,7 +91,7 @@ See `requirements.txt` for complete dependency list.
 Start the Streamlit development server:
 
 ```bash
-streamlit run db/UI/app.py
+streamlit run UI/app.py
 ```
 
 The application will open in your default browser at `http://localhost:8501`.
@@ -108,7 +108,7 @@ pip install -r requirements.txt
 export DATABASE_URL="your-production-database-url"
 
 # Run the app
-streamlit run db/UI/app.py --logger.level=info
+streamlit run UI/app.py --logger.level=info
 ```
 
 ## Usage Examples
@@ -179,7 +179,7 @@ For manual testing of the dashboard:
 
 2. **Launch the app**:
    ```bash
-   streamlit run db/UI/app.py
+   streamlit run UI/app.py
    ```
 
 3. **Verify functionality**:
@@ -205,12 +205,12 @@ psql -U username -d defect_db -f db/sample_queries.sql
 markdown_demo/
 ├── README.md                          # This file
 ├── requirements.txt                   # Python dependencies
+├── UI/
+│   └── app.py                        # Streamlit application
 ├── db/
 │   ├── schema.sql                    # Database schema definition
 │   ├── seed.sql                      # Sample data initialization
-│   ├── sample_queries.sql            # Reference SQL queries
-│   └── UI/
-│       └── app.py                    # Streamlit application
+│   └── sample_queries.sql            # Reference SQL queries
 ├── docs/
 │   ├── architecture_decision_records.md
 │   ├── assumptions_scope.md          # Project scope and assumptions
