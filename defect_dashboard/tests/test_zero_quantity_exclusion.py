@@ -1,4 +1,3 @@
-import pytest
 
 
 class TestZeroQuantityExclusion:
@@ -22,7 +21,10 @@ class TestZeroQuantityExclusion:
 
     def test_all_zero_quantity_defects(self):
         """Test behavior when all defects have zero quantity."""
-        from defect_dashboard.analytics import identify_recurring_defects, identify_oneoff_defects
+        from defect_dashboard.analytics import (
+            identify_recurring_defects,
+            identify_oneoff_defects,
+        )
 
         defects = [
             {"id": "D001", "lot_id": "LOT001", "quantity": 0},
@@ -35,7 +37,10 @@ class TestZeroQuantityExclusion:
 
     def test_single_zero_quantity_only(self, single_zero_quantity):
         """Test with a single zero-quantity defect."""
-        from defect_dashboard.analytics import identify_recurring_defects, identify_oneoff_defects
+        from defect_dashboard.analytics import (
+            identify_recurring_defects,
+            identify_oneoff_defects,
+        )
 
         recurring = identify_recurring_defects(single_zero_quantity)
         oneoff = identify_oneoff_defects(single_zero_quantity)
